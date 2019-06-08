@@ -30,6 +30,7 @@ Sheep has entered the farm
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             cow.Id = Guid.NewGuid().ToString();
+            cow.NoOfLegs = 4;
             farm.Enter(cow);
 
             Hen hen = new Hen();
@@ -39,10 +40,12 @@ Sheep has entered the farm
 
             Horse horse = new Horse();
             horse.Id = Guid.NewGuid().ToString();
+            horse.NoOfLegs = 4;
             farm.Enter(horse);
 
             Sheep sheep = new Sheep();
             sheep.Id = Guid.NewGuid().ToString();
+            sheep.NoOfLegs = 4;
             farm.Enter(sheep);
             Console.ReadKey();
         }

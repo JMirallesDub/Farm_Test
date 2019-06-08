@@ -4,12 +4,12 @@ namespace FarmSystem.Test1
 {
     internal class Sheep: Animal, IAnimal
     {  
-        public void Talk()
+        public new void Talk()
         {
             Console.WriteLine("Sheep says baa!");
         }
         
-        public void Run()
+        public new void Run()
         {
             Console.WriteLine("Sheep is running");
         }

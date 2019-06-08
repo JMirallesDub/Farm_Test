@@ -19,19 +19,18 @@ namespace FarmSystem.Test1
                 _id = value;
             }
         }
-        public int NoOfLegs { get; set; } = 4;
 
-        //public int NoOfLegs
-        //{
-        //    get
-        //    {
-        //        return _noOfLegs;
-        //    }
-        //    set
-        //    {
-        //        _noOfLegs = value;
-        //    }
-        //}
+        public int NoOfLegs
+        {
+            get
+            {
+                return _noOfLegs;
+            }
+            set
+            {
+                _noOfLegs = value;
+            }
+        } 
 
         public void Run()
         {

@@ -4,12 +4,12 @@ namespace FarmSystem.Test1
 {
     internal class Hen: Animal, IAnimal
     {
-        public void Talk()
+        public new void Talk()
         {
             Console.WriteLine("Hen say CLUCKAAAAAWWWWK!");
         }
 
-        public void Run()
+        public new void Run()
         {
             Console.WriteLine("Hen is running");
         }

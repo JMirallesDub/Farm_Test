@@ -4,7 +4,7 @@ namespace FarmSystem.Test1
 {
     internal class Cow: Animal, IAnimal, IMilkableAnimal
     {
-        public void Talk()
+        public new void Talk()
         {
             Console.WriteLine("Cow says Moo!");
         }
@@ -19,7 +19,7 @@ namespace FarmSystem.Test1
             Console.WriteLine("Cow produced milk");
         }
 
-        public void Run()
+        public new void Run()
         {
             Console.WriteLine("Cow is running");
         }
