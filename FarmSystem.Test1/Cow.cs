@@ -2,33 +2,8 @@
 
 namespace FarmSystem.Test1
 {
-    public class Cow 
+    internal class Cow: Animal, IAnimal, IMilkableAnimal
     {
-        private string _id;
-        private int _noOfLegs = 4;
-
-
-        public string Id
-        {
-            get { return _id; }
-            set
-            {
-                _id = value;
-            }
-        }
-
-        public int NoOfLegs
-        {
-            get
-            {
-                return _noOfLegs;
-            }
-            set
-            {
-                _noOfLegs = 4;
-            }
-        }
-
         public void Talk()
         {
             Console.WriteLine("Cow says Moo!");
@@ -48,6 +23,5 @@ namespace FarmSystem.Test1
         {
             Console.WriteLine("Cow is running");
         }
-
     }
 }
