@@ -9,9 +9,13 @@ namespace FarmSystem.Test1
         private static void Main(string[] args)
         {
             Excercise1();
+            Console.WriteLine();
             Excercise2();
+            Console.WriteLine();
             Excercise3();
+            Console.WriteLine();
             Excercise4();
+            Console.WriteLine();
             Console.ReadKey();
         }
 
@@ -30,7 +34,6 @@ Sheep has entered the farm
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             cow.Id = Guid.NewGuid().ToString();
-            cow.NoOfLegs = 4;
             farm.Enter(cow);
 
             Hen hen = new Hen();
@@ -40,14 +43,11 @@ Sheep has entered the farm
 
             Horse horse = new Horse();
             horse.Id = Guid.NewGuid().ToString();
-            horse.NoOfLegs = 4;
             farm.Enter(horse);
 
             Sheep sheep = new Sheep();
             sheep.Id = Guid.NewGuid().ToString();
-            sheep.NoOfLegs = 4;
             farm.Enter(sheep);
-            Console.ReadKey();
         }
 
 /***************************************************************************************************************
@@ -78,7 +78,7 @@ Sheep has entered the farm
 
             Hen hen = new Hen();
             hen.Id = Guid.NewGuid().ToString();
-            cow.NoOfLegs = 2;
+            hen.NoOfLegs = 2;
             farm.Enter(hen);
 
             Horse horse = new Horse();
@@ -90,7 +90,6 @@ Sheep has entered the farm
             farm.Enter(sheep);
             
             farm.MakeNoise();
-            Console.ReadKey();
         }
 
 /*****************************************************************************************************************
@@ -120,7 +119,7 @@ Cow was milked!
 
             Hen hen = new Hen();
             hen.Id = Guid.NewGuid().ToString();
-            cow.NoOfLegs = 2;
+            hen.NoOfLegs = 2;
             farm.Enter(hen);
 
             Horse horse = new Horse();
@@ -132,7 +131,6 @@ Cow was milked!
             farm.Enter(sheep);
 
             farm.MilkAnimals(cow);
-            Console.ReadKey();
         }
 
 /****************************************************************************************************
@@ -166,7 +164,7 @@ Emydex Farm is now empty
 
             Hen hen = new Hen();
             hen.Id = Guid.NewGuid().ToString();
-            cow.NoOfLegs = 2;
+            hen.NoOfLegs = 2;
             farm.Enter(hen);
 
             Horse horse = new Horse();
@@ -179,7 +177,7 @@ Emydex Farm is now empty
 
             farm.ReleaseAllAnimals();
 
-            Console.ReadKey();
+            Console.WriteLine("Press any key to close the app.");
         }
 
     }

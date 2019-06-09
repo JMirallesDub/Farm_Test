@@ -3,7 +3,7 @@
 namespace FarmSystem.Test1
 {
     internal class Horse: Animal, IAnimal
-    {       
+    {
 
         public new void Talk()
         {

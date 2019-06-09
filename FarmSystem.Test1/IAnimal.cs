@@ -4,7 +4,6 @@
     {
         string Id { get; set; }
         int NoOfLegs { get; set; }
-
         void Run();
         void Talk();
     }

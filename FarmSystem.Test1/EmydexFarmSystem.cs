@@ -54,13 +54,8 @@ namespace FarmSystem.Test1
         //TEST 4
         internal void ReleaseAllAnimals()
         {
-            //foreach (IAnimal animal in _includeAnimals)
-            //{
-            //    Console.WriteLine(animal.GetType().Name + " has left the farm");
-            //    _includeAnimals.Remove(animal);
-            //}
             int includeAnimalsCount = _includeAnimals.Count;
-            _includeAnimals.CollectionChanged += IncludeAnimals_CollectionClear;
+            _includeAnimals.CollectionChanged += FarmEmpty;
             for (int i = _includeAnimals.Count - 1; i >= 0; i--)
             {
                 Console.WriteLine(_includeAnimals[i].GetType().Name + " has left the farm");
@@ -70,7 +65,7 @@ namespace FarmSystem.Test1
 
         }
 
-        private void IncludeAnimals_CollectionClear(object sender, NotifyCollectionChangedEventArgs e)
+        private void FarmEmpty(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (_includeAnimals.Count == 0)
             {

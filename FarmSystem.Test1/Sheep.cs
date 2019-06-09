@@ -3,7 +3,7 @@
 namespace FarmSystem.Test1
 {
     internal class Sheep: Animal, IAnimal
-    {  
+    {
         public new void Talk()
         {
             Console.WriteLine("Sheep says baa!");

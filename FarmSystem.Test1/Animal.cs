@@ -6,31 +6,10 @@ using System.Threading.Tasks;
 
 namespace FarmSystem.Test1
 {
-    internal class Animal: IAnimal
+    class Animal: IAnimal
     {
-        private string _id;
-        private int _noOfLegs;
-
-        public string Id
-        {
-            get { return _id; }
-            set
-            {
-                _id = value;
-            }
-        }
-
-        public int NoOfLegs
-        {
-            get
-            {
-                return _noOfLegs;
-            }
-            set
-            {
-                _noOfLegs = value;
-            }
-        } 
+        public string Id { get; set; }
+        public int NoOfLegs { get; set; } = 4;
 
         public void Run()
         {
